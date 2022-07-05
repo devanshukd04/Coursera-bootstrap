@@ -28,12 +28,13 @@
     color: #0f0f0f
 }
 
-.row-head{
-    margin:0px auto;
-    padding:40px 0px 40px 0px;
-    border-bottom:1px ridge;
+
+
+.body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
 }
-.information{
-    margin-top:50px;
-    margin-bottom:40px;
+
+.navbar-dark{
+    background: #512DA8;
 }
