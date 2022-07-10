@@ -77,6 +77,78 @@
         </div>
     </div>
 
+
+    <div id="registerModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="firstname" class="col-12 col-sm-2 col-form-label">Number of Guests</label>
+                            <div class="col-12 col-md-6">
+                                <div class="form-check form-check-inline align-items-center">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option5">
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option6">
+                                    <label class="form-check-label" for="inlineRadio6">6</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="btngrp" class="col-12 col-sm-2 col-form-label">Section</label>
+                            <div class="col-12 col-sm-auto btn-group" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-success">Non-Smoking</button>
+                                <button type="button" class="btn btn-danger">Smoking</button>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group row">
+                            <label for="telnum" class="col-12 col-sm-2 col-form-label">Date and Time</label>
+                            <div class="col-7 col-sm-5">
+                                <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                            </div>
+                            <div class="col-5 col-sm-3">
+                                <input type="text" class="form-control" id="telnum" name="telnum" placeholder="Time">
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <div class="col-12 offset-sm-2">
+                                <button type="button" class="btn btn-secondary ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary ml-1">Sign in</button>        
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -88,11 +160,9 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a role="button" class="btn btn-warning"
-                    data-toggle="tooltip" data-html="true" 
-                    title="Or Call us at <br><strong>+852 12345678</strong>"
-                    data-placement="bottom"
-                    href="#reserve">Reserve Table</a>
+
+                    <a role="button" class="btn btn-warning" data-toggle="modal" data-target="#registerModal">
+                    Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -146,7 +216,7 @@
             </div>
         </div>
 
-        <div class="row row-content align-items-center">
+        <!-- <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
@@ -159,10 +229,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
-        <div class="row row-content align-items-center">
+        <!-- <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
@@ -175,9 +245,9 @@
                     <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png">
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="row row-content align-items-center">
+        <!-- <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order -sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
@@ -191,9 +261,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- offset-sm-2 -->
-        <div class="row row-content align-items-center" id="reserve">
+
+
+
+        <!-- Registration Form -->
+
+        <!-- <div class="row row-content align-items-center" id="reserve">
             <div class="col-12 offset-sm-2 col-sm-8">
                 <div class="card">
                    <h3 class="card header bg-warning text-white">Reserve a Table</h3>
@@ -246,7 +321,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
+
+
     </div>
 
     <footer class="footer">
@@ -297,11 +375,14 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
+
+    <!-- Tooltip -->
+
+    <!-- <script>
         $(document).ready(function() {
             $('[data-toggle="tooltip"]').tooltip();
         });
-    </script>
+    </script> -->
 
 </body>
 
